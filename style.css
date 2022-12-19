@@ -1,0 +1,504 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+html{
+	scroll-behavior: smooth;
+}
+header{
+	width: 100%;
+	height: 100vh;
+	background: black;
+	clip-path: polygon(0% 0%, 100% 0%,100% 100%,85% 85%,0% 100%);
+}
+nav{
+	width: 100%;
+	height: 100px;
+	display: flex;justify-content: space-evenly;
+	align-items: center;
+	color: white;
+}
+.logo{
+	font-size: 30px;
+	font-weight: bold;
+	letter-spacing: 3px;
+}
+span{
+	color: darkorange;
+}
+.menu a{
+	text-decoration:none;
+	color: white;
+	font-size: 20px;
+	font-weight: bold;
+	padding: 10px;
+	margin: 10px;
+}
+.menu a:hover{
+	border-bottom: 1px solid darkorange;
+	color: darkorange;
+	transition: 0.4s;
+}
+.menu a:first-child{
+	border-bottom: 1px solid darkorange;
+}
+.menu input{
+	outline: none;
+	text-align: center;
+	height: 25px;
+	border-radius: 15px;
+}
+.menu button{
+	margin: 10px;
+	width: 100px;
+	height: 25px;
+	cursor: pointer;
+	color: white;
+	background-color: darkorange;
+	font-size: 18px;
+	outline: none;
+	border:2px solid darkorange;
+	border-radius: 15px;
+}
+.container .left img{
+	height: 450px;
+	width: 500px;
+}
+.container{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+}
+.left{
+	flex-basis: 50%;
+}
+.right{
+	flex-basis: 50%;
+	max-width: 400px;
+}
+.right h1{
+	font-size: 50px;
+}
+.right p{
+	font-size: 25px;
+	margin: 10px 0px;
+}
+.right a{
+	text-decoration: none;
+	color: white;
+	font-size: 20px;
+}
+.right a:hover{
+	color: darkorange;
+}
+button{
+	background-color: darkorange;
+	border: 2px solid darkorange;
+	outline: none;
+	width: 200px;
+	height: 30px;
+	cursor: pointer;
+	border-radius: 15px;
+	color: white;
+	font-size: 20px;
+	margin: 10px; 
+}
+button:hover{
+	background: white;
+	color: darkorange;
+	transition: 0.4s;
+}
+.about-right-col img{
+	height: 350px;
+	width: 500px;
+	border-radius: 15px;
+	box-shadow: 0px 10px 20px -10px rgba(0,0,0,0.7);
+}
+#about{
+	padding: 100px 0px;
+}
+.about-row{
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.about-right-col{
+	flex-basis: 50%;
+	text-align: center;
+}
+.about-left-col{
+	flex-basis: 50%;
+	margin: auto;
+	max-width: 400px;
+}
+.about-left-col h1{
+	font-size: 50px;
+}
+.about-left-col p{
+	font-size: 20px;
+	text-align: justify;
+	margin: 15px 0px;
+}
+#signup{
+	padding-top: 50px;
+	padding-bottom: 20px;
+	background: rgba(0,0,0,0.03);
+	clip-path: polygon(0% 0%, 100% 0%,100% 100%,85% 85%,0% 100%);
+}
+#signup img{
+	height: 400px;
+	width: 400px;
+}
+.signup-row{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.signup-left-col{
+	flex-basis: 50%;
+	text-align: center;
+}
+.signup-left-col img{
+	width: 60%;
+}
+.signup-right-col{
+	flex-basis: 50%;
+}
+.signup-right-col h1{
+	font-size: 90px;
+}
+.signup-right-col h2{
+	font-size: 45px;
+	letter-spacing: 60px;
+	color: rgba(0,0,0,0.3);
+	margin: 10px 0px;
+}
+.signup-right-col button{
+	margin: 10px;
+}
+#services{
+	padding:50px 0px;
+}
+.services-info{
+	text-align: center;
+}
+.services-info h1{
+	font-size: 50px;
+}
+.services-info p{
+	font-size: 25px;
+	font-weight: bold;
+}
+.services-row{
+	display: grid;
+	grid-template-columns: repeat(3,200px);
+	grid-auto-rows: minmax(150px,auto);
+	grid-gap: 3em;
+	justify-content: center;
+	padding-top: 20px;
+}
+.services-box{
+	box-shadow: 2px 3px 5px grey;
+	padding: 10px;
+	text-align: center;
+}
+.services-box i{
+	background: darkorange;
+	color: white;
+	font-size: 30px;
+	padding: 10px;
+	margin-top: -20px;
+}
+.member-card{
+	text-align: center;
+	padding-top: 50px;
+	margin: auto;
+	width: 50%;
+}
+.member-card p{
+    margin: 20px;
+}
+.member-card h2{
+	margin: 20px;
+}
+.member-card img{
+	height: 150px;
+	width: 150px;
+    border-radius: 50%;
+}
+.member-card i{
+	margin: 20px;
+	font-size: 30px;
+	cursor: pointer;
+}
+#work{
+	padding-top: 50px;
+	padding-bottom: 200px;
+	background: rgba(0,0,0,0.03);
+	clip-path: polygon(0% 0%, 100% 0%,100% 100%,85% 85%,0% 100%);
+}
+.images{
+	box-shadow: 2px 3px 5px grey;
+}
+.images img{
+	width: 100%;
+	height: 100%;
+}
+#contact{
+	padding-top: 30px;
+}
+.contact-row{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.contact-left-col{
+     flex-basis: 50%;
+     padding-top: 50px;
+}
+.contact-right-col{
+	max-width: 450px;
+	margin: auto;
+	flex-basis: 50%;
+}
+.contact-right-col i{
+	font-size: 20px;
+	padding: 10px;
+	background-color: darkorange;
+	color: white;
+}
+.contact-right-col p{
+	margin-top: 10px;
+	margin-bottom: 20px;
+	font-size: 18px;
+}
+.form{
+	width: 70%;
+	margin: auto;
+	text-align: center;
+}
+.form input[type="text"]{
+	width: 70%;
+	padding-top: 10px;
+	margin-bottom: 10px;
+	outline: none;
+}
+textarea{
+	width: 70%;
+	outline: none;
+	padding-top: 10px;
+	margin-bottom: 10px;
+}
+#footer{
+	background: black;
+	color: white;
+	width: 100%;
+	height: 40px;
+	text-align: center;
+}
+#footer p{
+	padding: 10px;
+}
+.burger{
+	display: grid;
+    position: absolute;
+    cursor: pointer;
+    right: 4%;
+    top: 40px;
+    display: none;
+
+}
+.line{
+	width: 55px;
+	background-color: white;
+	height: 5px;
+	margin: 5px 5px;
+}
+#read{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	height: 400px;
+	width: 350px;
+	border-radius: 15px;
+	box-shadow: 0px 10px 20px -10px rgba(0,0,0,0.8);
+	background: white;
+	display: none;
+	opacity: 100%;
+}
+#read p{
+	color: black;
+	font-size: 50px;
+}
+.scrollup{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	align-items: center;
+	font-size: 30px;
+	color: #fff;
+	text-decoration: none;
+	opacity: 0;
+	pointer-events: none;
+	transition: 0.5s;
+	background: darkorange;
+	position: fixed;
+	height: 100px;
+	width: 100px;
+	right: 32px;
+	height: 40px;
+	width: 40px;
+	border-radius: 15px;
+	justify-content: center;
+}
+.scrollup.active{
+	bottom: 20px;
+	pointer-events: auto;
+	opacity: 1;
+	transform: translateY(-55px);
+	border-radius: 15px;
+}
+.scrollup.active:hover{
+	border-radius: 50px;
+}
+@media only screen and (max-width: 1140px){
+    .services-row {
+    grid-template-columns: repeat(3,300px);
+}
+header {
+    height: 40vh;
+    }
+    .right p {
+    font-size: 44px;
+}
+.right h1 {
+    font-size: 68px;
+}
+.right a{
+	font-size: 24px;
+}
+.signup-right-col h2 {
+    font-size: 35px
+    }
+.signup-right-col h1 {
+    font-size: 85px;
+}
+.about-right-col img {
+    height: 320px;
+    width: 420px;
+    }
+    .about-left-col p {
+    font-size: 46px;
+}
+.about-left-col h1 {
+    font-size: 70px;
+    }
+button {
+    width: 225px;
+    height: 55px;
+    border-radius: 50px;
+    font-size: 36px;
+}
+.logo{
+	font-size: 60px;
+	padding: 20px;
+    position: absolute;
+    left: 34px;
+    top: 5px;
+	}
+.menu{
+	flex-direction: column;
+	position: absolute;
+    width: 100%;
+    height: 30%;
+    display: inline-grid;
+    display: none;
+    text-align: center;
+    background:black;
+    align-items: center;
+    justify-content: center;
+    transition:0.5s;
+	}
+.menu button {
+    width: 200px;
+    height: 35px;
+    margin: 10px;
+    font-size: 33px;
+}
+.menu input{
+    width: 300px;
+    height: 35px;
+    margin: 35px;
+    font-size: 33px;
+}
+.burger{
+	display: block;
+}
+.menu a{
+	font-size: 40px;
+}
+nav{
+	flex-direction: column;
+	width: 100%;
+	height: 100px;
+	display:flex;
+	justify-content:left;
+	align-items:left;
+}
+.services-info h1 {
+    font-size: 62px;
+}
+.services-info p {
+    font-size: 42px;
+    font-weight: bold;
+}
+.services-row {
+    grid-auto-rows: minmax(250px,auto);
+    padding-top: 30px;
+}
+.services-box h2{
+	font-size: 40px;
+}
+.services-box p{
+	font-size: 32px;
+}
+.member-card img {
+    height: 200px;
+    width: 200px;
+    }
+.member-card p {
+    font-size: 42px;
+}
+.member-card {
+    width: 80%;
+}
+.member-card h2 {
+    font-size: 48px;
+}
+.contact-right-col{
+	font-size: 30px;
+}
+#footer p {
+    padding: 29px;
+    font-size: 40px;
+}
+#footer{
+	height: 100px;
+}
+#read{
+	height:1000px;
+	width: 800px;
+}
+.scrollup{
+	height: 100px;
+	width: 100px;
+}
+}
